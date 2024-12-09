@@ -1,0 +1,24 @@
+type GraphQlCodeScema {
+  # Example field (placeholder)
+  exampleField: Int
+}
+
+input CreateGraphQlCodeScemaInput {
+  # Example field (placeholder)
+  exampleField: Int
+}
+
+input UpdateGraphQlCodeScemaInput {
+  id: Int!
+}
+
+type Query {
+  graphQlCodeScema: [GraphQlCodeScema]!
+  graphQlCodeScema(id: Int!): GraphQlCodeScema
+}
+
+type Mutation {
+  createGraphQlCodeScema(createGraphQlCodeScemaInput: CreateGraphQlCodeScemaInput!): GraphQlCodeScema!
+  updateGraphQlCodeScema(updateGraphQlCodeScemaInput: UpdateGraphQlCodeScemaInput!): GraphQlCodeScema!
+  removeGraphQlCodeScema(id: Int!): GraphQlCodeScema
+}
